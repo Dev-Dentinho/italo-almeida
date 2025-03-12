@@ -1,0 +1,140 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1C1C1C">
+    <title>Italo Almeida | Desenvolvedor Front-End</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/cookies.css">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div id="theme-toggle">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </div>
+
+    <main>
+        <section id="home">
+            <div class="hero-content">
+                <h1>Italo Almeida</h1>
+                <h2><span id="typed-subtitle"></span></h2>
+                <p style="font-weight: 500; max-width: 600px; margin: 0.5rem auto 1rem;">Transformo ideias em sites trazendo soluções web que são inovadoras dinâmicas e que realmente fazem a diferença.</p>
+            </div>
+        </section>
+        <a href="Currículo-Italo-Almeida-Front-End.pdf" download class="btn-download">Download Currículo</a>
+<div class="image-section">
+        <img src="img/image2.gif" alt="Eu mermo Paizão">
+    </div>
+    
+   <!-- Cookie Notification -->
+<div id="cookie-notification" class="cookie-notification">
+    <div class="cookie-content">
+        <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com a nossa <a href="/politica-de-privacidade" target="_blank">Política de Privacidade</a> e <a href="/termos-de-uso" target="_blank">Termos de Uso</a>.</p>
+        <button id="accept-cookies" class="cookie-button">Aceitar</button>
+        <button id="deny-cookies" class="cookie-button">Negar</button>
+    </div>
+</div>
+    
+        <section id="about">
+            <div class="section-title">
+                <h2>Sobre Mim</h2>
+            </div>
+            <div class="about-content">
+        <p class="about-description" style="font-family: 'Inter', sans-serif; font-weight: 400; max-width: 800px; margin: 0 auto 2rem;"> <p id="greeting"></p>
+
+<script>
+  function getGreeting() {
+    const hours = new Date().getHours();
+    let time;
+
+    if (hours < 6) {
+      time = "Boa Madrugada";
+    } else if (hours < 12) {
+      time = "Bom Dia";
+    } else if (hours < 18) {
+      time = "Boa Tarde";
+    } else {
+      time = "Boa Noite";
+    }
+
+    return time;
+  }
+
+  document.getElementById("greeting").innerHTML = `Eae curioso! ${getGreeting()}<br>
+  Sou apaixonado por robótica e por transformar ideias em soluções reais através da programação. Especializado no desenvolvimento de websites modernos, funcionais e responsivos, também crio automações e bots utilizando Node.js. Se você precisa de um site profissional ou de soluções inovadoras para automatizar processos, estou pronto para ajudar a tornar seu projeto realidade!`;
+</script>
+
+        <section id="experiences">
+            <div class="section-title">
+                <h2>Minhas Experiências</h2>
+            </div>
+            <div class="experiences-grid">
+                <!-- As experiências serão preenchidas por JS -->
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-title">
+                <h2>Meus Projetos</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Projetos serão populados pelo JS -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">
+                <h2>Contato</h2>
+            </div>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://github.com/DentinhoJs" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/31983218051?text=Olá,%20tenho%20interesse%20em%20fazer%20um%20Website!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/italo__almeida_?igsh=eG44MjBjMWdiczBs" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <form id="contact-form">
+  <input type="text" id="name" placeholder="Nome" required><br><br>
+  <input type="email" id="email" placeholder="Email" required><br><br>
+  <textarea id="message" placeholder="Sua mensagem" required></textarea><br><br>
+  <button type="submit">Enviar</button>
+</form>
+</div>
+    </section>
+    </main>
+    <footer>
+        <p>© 2025 Italo Almeida - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+    </script>
+    <script src="anti-clone.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/email.js"></script>
+    <script>const time = (() => {
+    const hora = new Date().getHours();
+    return hora >= 5 && hora < 12 ? 'Bom Dia' :
+           hora >= 12 && hora < 18 ? 'Boa Tarde' :
+           'Boa Noite';
+})();</script>
+</body>
+</html>
