@@ -1,0 +1,132 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f; /* Fundo preto */
+    color: #ccc; /* Cinza claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Efeito de fade-in ao carregar */
+.privacy-container {
+    max-width: 800px;
+    background-color: #1a1a1a; /* Cinza escuro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+    border: 2px solid rgba(200, 200, 200, 0.1); /* Bordas cinza sutil */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos com efeito suave */
+h1, h2 {
+    color: #eee; /* Branco suave */
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    animation: subtleGlow 1.5s infinite alternate;
+}
+
+h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #333; /* Linha cinza sutil */
+    padding-bottom: 5px;
+    transition: border-bottom 0.3s ease;
+}
+
+/* Efeito glow suave nos títulos */
+@keyframes subtleGlow {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+    100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+}
+
+/* Efeito hover na borda do título */
+h2:hover {
+    border-bottom: 2px solid #555;
+}
+
+/* Parágrafos e listas */
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Links com efeito discreto */
+a {
+    color: #bbb; /* Cinza claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ddd; /* Cinza mais claro no hover */
+}
+
+/* Botão com efeito */
+.btn-back {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0 auto;
+    background-color: #292929; /* Cinza escuro */
+    color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito sutil no botão */
+.btn-back::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.btn-back:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn-back:hover {
+    background-color: #3a3a3a; /* Cinza um pouco mais claro */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}

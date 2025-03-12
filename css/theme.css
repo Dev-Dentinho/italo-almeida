@@ -1,0 +1,19 @@
+/* Moon Knight Theme */
+body.dark-theme {
+    --primary-color: #F0F0F0;  /* Moonknight White */
+    --secondary-color: #1C1C1C;  /* Dark Charcoal */
+    --text-color: #E0E0E0;  /* Light Gray */
+    --background-color: #0A0A0A;  /* Deep Black */
+    --card-background: #1A1A1A;  /* Slightly Lighter Black */
+    --accent-color: #B9B9B9;  /* Silver Gray */
+}
+
+body {
+    --primary-color: #333;  /* Dark Gray */
+    --secondary-color: #F5F5F5;  /* Light Gray */
+    --text-color: #1A1A1A;  /* Almost Black */
+    --background-color: #FFFFFF;  /* White */
+    --card-background: #F9F9F9;  /* Very Light Gray */
+    --accent-color: #4A4A4A;  /* Darker Gray */
+}
+
